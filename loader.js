@@ -152,7 +152,7 @@ client.on("message", function(message) {
                     }
 
                     games[joiningGames[message.channel.id]].close();
-                    message.channel.send(games[joiningGames[message.channel.id]].roomClosedMessage().replace("%1", "**" + parseInt(gameId) + "**")); //bold current number of game
+                   // message.channel.send(games[joiningGames[message.channel.id]].roomClosedMessage().replace("%1", "**" + parseInt(gameId) + "**")); //bold current number of game
                     joiningGames[message.channel.id] = null;
                     return;
                 }
