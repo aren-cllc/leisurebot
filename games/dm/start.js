@@ -33,6 +33,9 @@ module.exports = class {
     DiscordMonies.Games[this.id].players[DiscordMonies.Games[this.id].players.length] = Player
     Player.Game.announce("**" + Player.user.username + "** has joined the game!")
   }
+  roomClosedMessage() {
+    return "Game's closed, let's roll the dice!";
+  }
   close() {
     DiscordMonies.Games[this.id].Started=true;
     this.isOpen=false;
